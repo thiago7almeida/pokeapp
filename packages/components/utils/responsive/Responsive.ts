@@ -32,7 +32,10 @@ export class Responsive implements IResponsive {
     return ((device.width - 20) / guideline.width) * size;
   }
 
-  size(size: number, reference: 'vertical' | 'horizontal'): number {
+  size(
+    size: number,
+    reference: 'vertical' | 'horizontal' = 'horizontal',
+  ): number {
     let result = 0;
 
     if (reference === 'horizontal') {

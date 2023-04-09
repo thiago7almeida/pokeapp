@@ -9,7 +9,7 @@ const guideline = {
   width: isPad ? 800 : 400,
 };
 
-export default new Responsive(
+export const responsive = new Responsive(
   guideline,
   Dimensions.get('window'),
   PixelRatio.roundToNearestPixel,
