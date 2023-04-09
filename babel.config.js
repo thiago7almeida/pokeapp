@@ -7,6 +7,7 @@ module.exports = {
         alias: {
           '@components': './packages/components',
           '@main': './packages/main',
+          '@pokemon': './packages/pokemon',
         },
       },
     ],

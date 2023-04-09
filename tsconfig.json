@@ -5,7 +5,8 @@
     "strict": true,
     "paths": {
       "@components": ["./packages/components/index"],
-      "@main": ["./packages/main/index"]
+      "@main": ["./packages/main/index"],
+      "@pokemon": ["./packages/pokemon/index"]
     }
   }
 }
