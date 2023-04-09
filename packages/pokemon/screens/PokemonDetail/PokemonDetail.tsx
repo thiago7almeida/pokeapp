@@ -1,27 +1,17 @@
-import React, {useEffect, useMemo} from 'react';
+import React from 'react';
 import {StatusBar} from 'react-native';
-import {useNavigation, useRoute} from '@react-navigation/native';
 
-import {responsive, colors, PokemonContent} from '@components';
+import {responsive, PokemonContent} from '@components';
 
 import {IMAGE_URL} from '../PokemonList/PokemonList.constants';
-import {TPokemonReturn} from '../../graphql';
 import {Container, ImageContainer, Image} from './PokemonDetail.styles';
 
-export const PokemonDetail: React.FC = () => {
-  const route = useRoute();
-  const pokemon = route.params as TPokemonReturn;
-  const {setOptions} = useNavigation();
+import {TPokemonReturn} from '../../graphql';
 
-  const backgroundColor = useMemo(() => {
-    const type = pokemon.pokemon_v2_pokemontypes[0].pokemon_v2_type.name;
-    return colors[type] || colors.bug;
-  }, [pokemon]);
-
-  useEffect(() => {
-    setOptions({title: pokemon.name});
-  }, [pokemon.name, setOptions]);
-
+export const PokemonDetailComponent: React.FC<{
+  backgroundColor: string;
+  pokemon: TPokemonReturn;
+}> = ({backgroundColor, pokemon}) => {
   return (
     <>
       <StatusBar backgroundColor={backgroundColor} />
