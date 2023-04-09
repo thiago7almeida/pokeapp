@@ -9,6 +9,8 @@ export const POKEMON_QUERY = gql`
     pokemon_v2_pokemon(limit: $limit, offset: $offset, where: $where) {
       id
       name
+      weight
+      height
       pokemon_v2_pokemontypes {
         pokemon_v2_type {
           name

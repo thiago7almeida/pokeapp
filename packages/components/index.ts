@@ -3,4 +3,4 @@ export {spacing, colors} from './layouts';
 
 export {Typography, CardContainer, FloatImage, TextInputBase} from './atoms';
 export {Card, TextInput} from './molecules';
-export {PokemonCard} from './organisms';
+export {PokemonCard, PokemonContent} from './organisms';

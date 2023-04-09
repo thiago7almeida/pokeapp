@@ -1,18 +1,27 @@
 import React from 'react';
-import {View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {PokemonList} from '../screens';
+import {PokemonList, PokemonDetail} from '../screens';
 
 const Stack = createNativeStackNavigator();
 
 export const Navigator = (
   <Stack.Navigator>
     <Stack.Screen
-      name="Home"
+      name="PokemonList"
       options={{headerShown: false}}
       component={PokemonList}
     />
-    <Stack.Screen name="Home2" component={View} />
+    <Stack.Screen
+      name="PokemonDetail"
+      component={PokemonDetail}
+      options={{
+        headerTransparent: true,
+        headerTintColor: '#fff',
+        title: '',
+        headerTitleStyle: {fontSize: 24},
+        headerBackTitle: '',
+      }}
+    />
   </Stack.Navigator>
 );

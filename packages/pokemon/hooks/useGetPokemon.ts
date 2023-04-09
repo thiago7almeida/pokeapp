@@ -6,7 +6,7 @@ import {useCallback, useEffect} from 'react';
 export const useGetPokemon = (filter?: string) => {
   const {data, fetchMore, loading, refetch} = useQuery(POKEMON_QUERY, {
     variables: {
-      limit: 20,
+      limit: 10,
       offset: 0,
       where: filter ? {name: {_like: `${filter}%`}} : null,
     },

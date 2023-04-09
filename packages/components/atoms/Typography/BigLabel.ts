@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
 import {spacing} from '../../layouts';
 
-export const Label = styled.Text<{color?: string}>`
-  font-size: ${spacing.s16}px;
-  font-weight: bold;
+export const BigLabel = styled.Text<{color?: string}>`
+  font-size: ${spacing.s32}px;
   color: ${({color = '#fff'}) => color};
 `;

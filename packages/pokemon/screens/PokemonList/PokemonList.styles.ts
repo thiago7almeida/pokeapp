@@ -11,7 +11,7 @@ export const List = styled.FlatList.attrs({
   },
 })`` as unknown as typeof FlatList;
 
-export const Separator = styled.View<{margin: boolean}>`
-  margin-left: ${({margin}) => (margin ? spacing.s8 : 0)}px;
+export const Separator = styled.View<{hasMargin: boolean}>`
   flex: 1;
+  margin-left: ${({hasMargin}) => (hasMargin ? spacing.s8 : 0)}px;
 `;
