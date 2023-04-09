@@ -1,3 +1,11 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "types": ["styled-components-react-native"],
+    "strict": true,
+    "paths": {
+      "@components": ["./packages/components/index"],
+      "@main": ["./packages/main/index"]
+    }
+  }
 }
