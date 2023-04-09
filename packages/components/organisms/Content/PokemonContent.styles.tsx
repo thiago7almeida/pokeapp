@@ -3,10 +3,12 @@ import {spacing} from '../../layouts';
 
 export const Content = styled.View`
   flex: 1;
+  margin-horizontal: ${spacing.s32}px;
   margin-top: ${spacing.s16}px;
 `;
 
 export const BorderedLabelContainer = styled.View`
+  margin-top: ${spacing.s16}px;
   margin-horizontal: ${spacing.s16}px;
   flex-direction: row;
   justify-content: center;

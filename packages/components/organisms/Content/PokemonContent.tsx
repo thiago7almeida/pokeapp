@@ -17,6 +17,11 @@ export const PokemonContent: React.FC<{
 }> = ({height, weight, types}) => {
   return (
     <Content>
+      {types.map(({pokemon_v2_type: {name: type}}) => (
+        <LabelContainer key={type} customBackgroundColor={colors[type]}>
+          <Typography.BigLabel>{type}</Typography.BigLabel>
+        </LabelContainer>
+      ))}
       <BorderedLabelContainer>
         <Typography.BorderedLabel color="black">
           {height} m
@@ -25,11 +30,6 @@ export const PokemonContent: React.FC<{
           {weight} kg
         </Typography.BorderedLabel>
       </BorderedLabelContainer>
-      {types.map(({pokemon_v2_type: {name: type}}) => (
-        <LabelContainer key={type} customBackgroundColor={colors[type]}>
-          <Typography.BigLabel>{type}</Typography.BigLabel>
-        </LabelContainer>
-      ))}
     </Content>
   );
 };
