@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "borderColor": "gray",
+        "borderRadius": 59,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "marginBottom": 15,
+        "marginLeft": 15,
+        "marginRight": 15,
+        "marginTop": 15,
+        "paddingHorizontal": 29,
+      },
+    ]
+  }
+>
+  <TextInput
+    autoCorrect={false}
+    onChangeText={[MockFunction]}
+    placeholder="placeholder text"
+    style={
+      [
+        {
+          "height": 73,
+        },
+      ]
+    }
+    value="input value"
+  />
+</View>
+`;

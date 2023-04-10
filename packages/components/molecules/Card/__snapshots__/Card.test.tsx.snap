@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly 1`] = `
+<View
+  backgroundColor="red"
+  style={
+    [
+      {
+        "backgroundColor": "red",
+        "borderRadius": 29,
+        "flexGrow": 1,
+        "height": 267,
+        "paddingBottom": 15,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 15,
+      },
+    ]
+  }
+  testID="card-container"
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#fff",
+          "fontSize": 29,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    Card Title
+  </Text>
+  <Image
+    source={
+      {
+        "uri": "https://example.com/image.png",
+      }
+    }
+    style={
+      [
+        {
+          "bottom": -15,
+          "height": 234,
+          "position": "absolute",
+          "right": -15,
+          "width": 234,
+        },
+      ]
+    }
+    testID="card-image"
+  />
+</View>
+`;

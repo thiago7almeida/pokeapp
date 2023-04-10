@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {Typography} from '../../atoms';
-import {colors} from '../../layouts';
+import {Typography, colors} from '@components';
 
 import {
   BorderedLabelContainer,
   Content,
   LabelContainer,
 } from './PokemonContent.styles';
+
 import {TPokemonReturn} from '../../../pokemon/graphql';
 
 export const PokemonContent: React.FC<{
@@ -19,7 +19,7 @@ export const PokemonContent: React.FC<{
     <Content>
       {types.map(({pokemon_v2_type: {name: type}}) => (
         <LabelContainer key={type} customBackgroundColor={colors[type]}>
-          <Typography.BigLabel>{type}</Typography.BigLabel>
+          <Typography.BigLabel testID="type-label">{type}</Typography.BigLabel>
         </LabelContainer>
       ))}
       <BorderedLabelContainer>

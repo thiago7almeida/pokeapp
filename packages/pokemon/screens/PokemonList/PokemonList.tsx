@@ -37,6 +37,7 @@ export const PokemonListComponent: React.FC<{
   return (
     <SafeAreaView>
       <List
+        testID="pokemon-list"
         ListFooterComponent={list.loading ? <ActivityIndicator /> : null}
         onEndReached={list.loadMore}
         ListHeaderComponent={

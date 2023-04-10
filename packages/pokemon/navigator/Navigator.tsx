@@ -2,8 +2,15 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {PokemonList, PokemonDetail} from '../screens';
+import {TPokemonReturn} from '../graphql';
+import {spacing} from '../../components/layouts';
 
-const Stack = createNativeStackNavigator();
+export type RootStackParamList = {
+  PokemonList: undefined;
+  PokemonDetail: TPokemonReturn;
+};
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const Navigator = (
   <Stack.Navigator>
@@ -19,7 +26,7 @@ export const Navigator = (
         headerTransparent: true,
         headerTintColor: '#fff',
         title: '',
-        headerTitleStyle: {fontSize: 24},
+        headerTitleStyle: {fontSize: spacing.s24},
         headerBackTitle: '',
       }}
     />

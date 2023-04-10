@@ -15,9 +15,10 @@ export const PokemonDetailComponent: React.FC<{
   return (
     <>
       <StatusBar backgroundColor={backgroundColor} />
-      <Container>
+      <Container testID="container">
         <ImageContainer customBackgroundColor={backgroundColor}>
           <Image
+            testID="image"
             source={{
               uri: `${IMAGE_URL}${pokemon.id}.png`,
               width: responsive.size(200),

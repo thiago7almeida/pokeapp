@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should render correctly 1`] = `
+<View
+  backgroundColor="red"
+  style={
+    [
+      {
+        "backgroundColor": "red",
+        "borderRadius": 16,
+        "flexGrow": 1,
+        "height": 160,
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+      },
+    ]
+  }
+/>
+`;
